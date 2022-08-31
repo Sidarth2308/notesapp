@@ -1,0 +1,105 @@
+.Subject-Box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+.Subject-Container{
+    height: 400px;
+    width: 400px;
+    background-color: #FFC23C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 15px;
+    position: relative;
+}
+.Subject-Heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Subject-HeadingInput{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 60%;  
+}
+.Subject-PostHeading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+.Subject-AddButtonClose{
+    flex-direction: column;
+    height : 400px;
+    width: 400px;
+    font-size: 22px;
+    background-color: #FFC23C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.Subject-AddButtonOpen{
+    position: relative;
+    height : 400px;
+    width: 400px;
+    background-color: #FFC23C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 20px;
+    
+}
+.Subject-AddTopic{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    position: absolute;
+    bottom:50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Subject-TopicsContainer{
+    background-color: #EC994B;
+    width: 80%;
+    border-radius: 10px;
+    height:200px;
+    padding: 10px;
+    flex-direction: column;
+    
+    overflow-y: auto;
+    /* overflow-y: scroll; */
+}
+.Topic-Box{
+    color:black;
+    background-color:#FFC23C;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}

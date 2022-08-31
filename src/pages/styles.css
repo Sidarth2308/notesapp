@@ -1,0 +1,123 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.Home-Container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.Sidebar-Closed{
+
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left:0;
+    height:  100%;
+    background-color: black;
+    transform: translateX(-500px);
+    transition: all .3s ease-in-out;
+    padding-left: 30px;
+}
+.Sidebar-Open{
+    width: 500px;
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+   
+    background-color: black;
+    transition: all .3s ease-in-out;
+    padding-left: 30px;
+}
+.Sidebar-Content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Sidebar-Heading{
+    color: white;
+    margin-top: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.Sidebar-Notes{
+    background-color: #FFC23C;
+    height:80vh;
+    /* min-height: 500px; */
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.Sidebar-BehindOpen{
+    transition : all 0.4s ease;
+    
+    width : 100%;
+    position:absolute;
+    right: 0;
+    top:0;
+    height:100%;
+    transform: translateX(0);
+    background-color:rgb(255,255,255, 0.6 );
+}
+.Sidebar-BehindClose{
+    transition : all 0.4s ease;
+    
+    display: none;
+    width : 100%;
+    position:absolute;
+    right: 0;
+    top:0;
+    height:100%;
+    overflow: hidden;
+    transform: translateX(100%);
+    background-color:rgb(255,255,255, 0.6 );
+}
+.Sidebar-NotesHeading{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.Sidebar-NotesAdd{
+    width: 30%;
+    background-color: black;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    padding : 2px 0;
+}
+.Sidebar-NotesBody{
+    flex-direction: column;
+    height: 200px;
+    overflow-y: auto;
+}
+.Sidebar-Note{
+    margin-bottom: 10px;
+    position: relative;
+}
+.Sidebar-NoteDelete{
+    align-items: center;
+}
+.Sidebar-NoteArea{
+    width: 90%;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Sidebar-NoteSubmit{
+    width: 40%;
+    background-color: black;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    padding : 2px 0;
+    margin-top: 10px;
+}
